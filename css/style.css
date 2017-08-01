@@ -1,0 +1,35 @@
+html,body {
+  margin: 0px;
+  height: 100%;
+}
+body {
+  user-select: none;
+  font-family: Roboto, "Noto Sans", Noto, sans-serif;
+}
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "header div"
+                       "nav    main";
+}
+#app>header {
+  grid-area: header;
+  font-size: 20px;
+  line-height: 50px;
+  padding-left: 10px;
+  color: white;
+  background-color: #495570
+}
+#app>div {
+  grid-area: div;
+  background-color: #53617f;}
+#app>nav {
+  grid-area: nav;
+  background-color: #f7f7f7;
+}
+#app>main {
+  grid-area: main;
+  background-image: url(../image/bg.jpg);
+}

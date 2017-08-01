@@ -1,0 +1,11 @@
+html,body {
+  margin: 0px;
+  min-height: 100%;
+}
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px 0px 50px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "div" "nav" "main";
+}
